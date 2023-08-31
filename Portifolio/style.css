@@ -1,0 +1,282 @@
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    overflow: auto;
+}
+.background{
+    background: url(img/cup-coffee-black-texture-background.jpg);
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    height: 700px;
+}
+/*cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+}
+.cabeçalho-link{
+    display: flex;
+    gap: 100px;
+    font-weight: 30;
+    cursor: pointer;  
+}
+.cabeçalho-link a{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+.cabeçalho-link a:hover{
+    color: #2ecc71;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+.logo img{
+    height: 80px;
+    width: 75px;
+    cursor: pointer;
+}
+/*Redes Sociais*/   
+button{
+    margin-top: 10px;
+    color: #2ecc71;
+    background: transparent;
+    border:solid 2px #2ecc71;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 150px;
+}
+button:hover{
+    color: #fff  ;
+    background-color: #2ecc71;
+    transition: 0.5s;
+
+}
+.container-text{
+    padding: 150px 0 0 130px;
+     display: flex;
+}
+.text h3{
+    color: #fff;
+    font-size: 30px;
+}
+.text h1{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 45px;
+}
+.text span{
+    color: #2ecc71; 
+}
+.text p{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.redes-social{
+    margin-top: 10px;
+    margin-left: -12px;
+}
+
+.redes-social a{
+    color: #2ecc71;
+    padding: 10px;
+    margin-top: 5px;
+}
+.redes-social img{
+    transition: .2s;
+    width: 25px;
+    height: 25px;
+}
+.redes-social img:hover{
+    transform: scale(1.4);
+}
+/*Sobre mim */
+.background-color-Sobre{
+    background-color: #191919;
+    width: 100%;
+    padding: 100px 0px;/* Afasta o topo e a parte de baixo sem deixar um espaço branco, margin top não funcionou*/
+}
+.background-color-Sobre img{
+    width: 400px;
+    height: auto;
+    border-radius: 45px;
+}
+.Text-sobre{
+    width: 550px;
+  }
+.main-sobre{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 1130px;
+   margin: 0 auto;
+}
+/* aaa */
+.Text-sobre h2{
+    color: #2ecc71;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.Text-sobre h5{
+    color: #59bf83;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.Text-sobre p{
+    color: rgba(255, 255, 255, 0.99);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+/*Skills*/
+/*Foi reutilizado para a parte das*/
+.titulo{
+    color: #2ecc71;
+    text-align: center;
+    font-size: 38px;
+}
+.titulo span{
+    color: #fff;
+}
+section.minhaSkills{
+    padding: 40px 8%;
+    background-color: #000000;
+}
+section.minhaSkills .flex{
+    gap: 60px;
+    display: flex;
+}
+.minhaSkills .habilidades{
+    background-color: #414141;
+    color: #fff;
+    padding: 40px;
+    margin-top: 50px;
+    border: solid rgb(80, 80, 80);
+    border-radius: 30px;
+    transition: .2s;
+}
+.minhaSkills .habilidades:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #2ecc7058;
+}
+.minhaSkills .habilidades img{
+    width: 40px;
+    height: 40px;
+}
+.minhaSkills .habilidades h3{
+
+    font-size: 30px;
+    margin: 15px 0;
+}
+/*PROJETOS*/
+section.projetos{
+    background-color: #191919;
+    padding: 80px 4%;
+    box-shadow: 0 0 10px 5px #2ecc71;
+}
+section.projetos .flex{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+section.projetos .flex a{
+    color: #fff;
+}
+.imagemProjeto{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.6s;
+}
+/*nota mental: box-shadow é muito bala*/
+.imagemProjeto:hover{
+    box-shadow: 0 0 10px #2ecc71;
+    transform: scale(1.05);
+}
+
+.project1{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: #1b1d1c6d;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+/*contato*/
+section.formulario{
+    background-color: #323232;
+    padding: 80px 8%;
+}
+form{
+    margin: 0 auto;
+    display: flex;
+    max-width: 550px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+form input, form textarea{
+    background-color: #191919;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+    
+}
+form .butao-enviar{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+form .butao-enviar input:hover{
+    box-shadow: 0 0 10px #2ecc71;
+    transform: scale(1.07);
+}
+form .butao-enviar input{
+    width: 120px;
+    color: #2ecc71;
+    cursor: pointer;
+    transition: 0.2s;
+}
+/*TELAS DOS PROJETO*/
+#project1{
+    font-size: 15px;
+}
+.fotoProject img{
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    margin-left:80%  ;
+    margin-bottom: 20%;
+    margin-right: 40%;
+    margin-top: -15%;
+}
